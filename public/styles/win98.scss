@@ -1,0 +1,80 @@
+.win {
+    font-family: sans-serif;
+    font-size: 14px;
+    &-window {
+        background-color: #bfbfbf;
+        border-top-color: #dfdfdf;
+        border-left-color: #dfdfdf;
+        border-right-color: #808080;
+        border-bottom-color: #808080;
+        box-shadow: 1px 1px 0 0 #000;
+        display: flex;
+        flex-direction: column;
+        padding: 2px;
+        &-content {
+            padding: 20px 6px;
+            @for $i from 1 through 4 {
+                h#{$i} {
+                    margin: 10px 0;
+                    font-size: 1.5em - $i/10;
+                    font-weight: bold;
+                    text-align: center;
+                }
+            }
+        }
+        p {
+            display: flex;
+            margin: 10px 0;
+        }
+    }
+    &-nav {
+        padding: 2px 3px;
+        color: #fff;
+        background: -webkit-linear-gradient(left, #000080, #1084d0);
+        background: linear-gradient(to right, #000080, #1084d0);
+        font-weight: bold;
+        &-icon {
+            float: left;
+            width: 16px;
+            margin-right: 4px;
+        }
+    }
+    &-icon {
+        margin: 2px;
+        width: 32px;
+        height: 32px;
+    }
+    &-button {
+        font-family: Tahoma, Verdana;
+        color: #070707;
+        background: #bfbfbf;
+        border: 1px solid;
+        border-top-color: #dfdfdf;
+        border-left-color: #dfdfdf;
+        border-right-color: #808080;
+        border-bottom-color: #808080;
+        box-shadow: 1px 1px 0 0 #000;
+        text-align: center;
+        outline: none;
+        padding: 3px 7px;
+        position: relative;
+        cursor: pointer;
+        &:active {
+            border: 1px solid black;
+            &::after {
+                content: '';
+                position: absolute;
+                box-sizing: border-box;
+                width: 90%;
+                height: 90%;
+                left: 5%;
+                top: 5%;
+                border: 1px dotted black;
+            }
+        }
+    }
+    &-disabled {
+        cursor: initial;
+        color: #777;
+    }
+}

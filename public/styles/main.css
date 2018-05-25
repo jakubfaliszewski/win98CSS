@@ -1,0 +1,20 @@
+body {
+  background-color: #008080;
+}
+
+body .content {
+  max-width: 1024px;
+  padding: 20px;
+  margin: auto;
+}
+
+body .content .window600 {
+  max-width: 600px;
+  margin: auto;
+}
+
+body .center {
+  text-align: center;
+  margin: auto;
+}
+/*# sourceMappingURL=main.css.map */

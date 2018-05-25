@@ -1,0 +1,111 @@
+.win {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.win-window {
+  background-color: #bfbfbf;
+  border-top-color: #dfdfdf;
+  border-left-color: #dfdfdf;
+  border-right-color: #808080;
+  border-bottom-color: #808080;
+  box-shadow: 1px 1px 0 0 #000;
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+}
+
+.win-window-content {
+  padding: 20px 6px;
+}
+
+.win-window-content h1 {
+  margin: 10px 0;
+  font-size: 1.4em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.win-window-content h2 {
+  margin: 10px 0;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.win-window-content h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.win-window-content h4 {
+  margin: 10px 0;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.win-window p {
+  display: flex;
+  margin: 10px 0;
+}
+
+.win-nav {
+  padding: 2px 3px;
+  color: #fff;
+  background: -webkit-linear-gradient(left, #000080, #1084d0);
+  background: linear-gradient(to right, #000080, #1084d0);
+  font-weight: bold;
+}
+
+.win-nav-icon {
+  float: left;
+  width: 16px;
+  margin-right: 4px;
+}
+
+.win-icon {
+  margin: 2px;
+  width: 32px;
+  height: 32px;
+}
+
+.win-button {
+  font-family: Tahoma, Verdana;
+  color: #070707;
+  background: #bfbfbf;
+  border: 1px solid;
+  border-top-color: #dfdfdf;
+  border-left-color: #dfdfdf;
+  border-right-color: #808080;
+  border-bottom-color: #808080;
+  box-shadow: 1px 1px 0 0 #000;
+  text-align: center;
+  outline: none;
+  padding: 3px 7px;
+  position: relative;
+  cursor: pointer;
+}
+
+.win-button:active {
+  border: 1px solid black;
+}
+
+.win-button:active::after {
+  content: '';
+  position: absolute;
+  box-sizing: border-box;
+  width: 90%;
+  height: 90%;
+  left: 5%;
+  top: 5%;
+  border: 1px dotted black;
+}
+
+.win-disabled {
+  cursor: initial;
+  color: #777;
+}
+/*# sourceMappingURL=win98.css.map */
