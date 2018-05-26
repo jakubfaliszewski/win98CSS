@@ -10,11 +10,32 @@ body .content {
 
 body .content .window600 {
   max-width: 600px;
-  margin: auto;
+  margin: 10px auto;
 }
 
 body .center {
   text-align: center;
   margin: auto;
+}
+
+body .win .prettyprint {
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 5px;
+  white-space: pre-wrap;
+  border-radius: 0;
+}
+
+body .win .win-icon {
+  float: left;
+}
+
+body .margin {
+  margin: 10px 0;
+}
+
+body strong {
+  border-bottom: 1px solid #008080;
 }
 /*# sourceMappingURL=main.css.map */

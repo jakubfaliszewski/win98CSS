@@ -4,14 +4,35 @@ body {
         max-width: 1024px;
         padding: 20px;
         margin: auto;
-
-        .window600{
+        .window600 {
             max-width: 600px;
-            margin: auto;
+            margin: 10px auto;
         }
     }
-    .center{
+    .center {
         text-align: center;
         margin: auto;
     }
+    .win {
+        .prettyprint {
+            width: 100%;
+            margin: 0;
+             box-sizing: border-box;
+            padding: 5px;
+            white-space: pre-wrap;
+            border-radius: 0;
+        }
+
+        .win-icon{
+            float: left;
+        }
+    }
+
+    .margin{
+        margin: 10px 0;
+    }
+    strong{
+        border-bottom: 1px solid #008080;
+    }
+
 }

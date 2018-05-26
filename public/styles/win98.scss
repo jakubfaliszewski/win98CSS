@@ -9,6 +9,7 @@
         border-bottom-color: #808080;
         box-shadow: 1px 1px 0 0 #000;
         display: flex;
+        clear: both;
         flex-direction: column;
         padding: 2px;
         &-content {
@@ -22,10 +23,7 @@
                 }
             }
         }
-        p {
-            display: flex;
-            margin: 10px 0;
-        }
+
     }
     &-nav {
         padding: 2px 3px;
@@ -33,6 +31,7 @@
         background: -webkit-linear-gradient(left, #000080, #1084d0);
         background: linear-gradient(to right, #000080, #1084d0);
         font-weight: bold;
+      
         &-icon {
             float: left;
             width: 16px;
@@ -41,6 +40,7 @@
     }
     &-icon {
         margin: 2px;
+        image-rendering: pixelated;
         width: 32px;
         height: 32px;
     }
@@ -76,5 +76,11 @@
     &-disabled {
         cursor: initial;
         color: #777;
+    }
+    &-a {
+        background-color: #000080;
+        color: white;
+        text-decoration: none;
+        padding: 2px;
     }
 }

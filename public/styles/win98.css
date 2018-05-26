@@ -11,6 +11,7 @@
   border-bottom-color: #808080;
   box-shadow: 1px 1px 0 0 #000;
   display: flex;
+  clear: both;
   flex-direction: column;
   padding: 2px;
 }
@@ -47,11 +48,6 @@
   text-align: center;
 }
 
-.win-window p {
-  display: flex;
-  margin: 10px 0;
-}
-
 .win-nav {
   padding: 2px 3px;
   color: #fff;
@@ -68,6 +64,7 @@
 
 .win-icon {
   margin: 2px;
+  image-rendering: pixelated;
   width: 32px;
   height: 32px;
 }
@@ -107,5 +104,12 @@
 .win-disabled {
   cursor: initial;
   color: #777;
+}
+
+.win-a {
+  background-color: #000080;
+  color: white;
+  text-decoration: none;
+  padding: 2px;
 }
 /*# sourceMappingURL=win98.css.map */
