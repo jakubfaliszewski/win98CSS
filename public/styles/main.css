@@ -13,18 +13,18 @@ body .content .window600 {
   margin: 10px auto;
 }
 
+body .content .window100 {
+  max-width: 100%;
+  margin: 10px auto;
+}
+
+body .content .height100 {
+  height: 100px;
+}
+
 body .center {
   text-align: center;
   margin: auto;
-}
-
-body .win .prettyprint {
-  width: 100%;
-  margin: 0;
-  box-sizing: border-box;
-  padding: 5px;
-  white-space: pre-wrap;
-  border-radius: 0;
 }
 
 body .win .win-icon {
@@ -37,5 +37,22 @@ body .margin {
 
 body strong {
   border-bottom: 1px solid #008080;
+}
+
+body .grid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+body .grid-element {
+  width: 45%;
+}
+
+body .grid-element:last-child {
+  max-height: 400px;
+  overflow: auto;
+  resize: horizontal;
 }
 /*# sourceMappingURL=main.css.map */
