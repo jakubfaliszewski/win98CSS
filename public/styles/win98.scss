@@ -209,7 +209,7 @@
                             background-color: #000080;
                             color: #fff;
                         }
-                        .win-nav-icon{
+                        .win-nav-icon {
                             float: left;
                             width: 16px;
                             margin: 0 4px 0 0;
@@ -233,38 +233,125 @@
         bottom: 0;
         left: 0;
     }
-
-    &-input{
+    &-input {
+        box-sizing: border-box;
         border: 2px solid;
         border-top-color: #808080;
         border-left-color: #808080;
         border-right-color: #dfdfdf;
         border-bottom-color: #dfdfdf;
     }
-    // &-select{
-    //     position: relative;
-    //     border: 2px solid;
-    //     border-top-color: #808080;
-    //     border-left-color: #808080;
-    //     border-right-color: #dfdfdf;
-    //     border-bottom-color: #dfdfdf;
-    // }
+    &-select {
+        position: relative;
+        border: 2px solid;
+        border-top-color: #808080;
+        border-left-color: #808080;
+        border-right-color: #dfdfdf;
+        border-bottom-color: #dfdfdf;
+        select {
+            border: none;
+            width: 100%;
+            option {
+                &:checked {
+                    background: #000080;
+                    color: white;
+                }
+            }
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 20px;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.2);
+            border: 2px solid;
+            border-top-color: #dfdfdf;
+            border-left-color: #dfdfdf;
+            border-right-color: #808080;
+            border-bottom-color: #808080;
+            -webkit-box-sizing: border-box;
+            pointer-events: none;
+            box-sizing: border-box;
+        }
+    }
+    &-radio,
+    &-checkbox {
+        display: block;
+        position: relative;
+        padding-left: 1.5em;
+        margin-bottom: 0.7em;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            &:checked {
+                ~span::after {
+                    opacity: 1;
+                }
+            }
+        }
+        span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 1em;
+            width: 1em;
+            background-color: white;
+            border: 2px solid;
+            border-top-color: #808080;
+            border-left-color: #808080;
+            border-bottom-color: #dfdfdf;
+            border-right-color: #dfdfdf;
+            box-sizing: border-box;
+            &::after {
+                content: '';
+                height: 0.5em;
+                width: 0.5em;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background-color: #252525;
+                transform: translateX(25%) translateY(25%);
+                opacity: 0;
+                transition: 0.1s;
+            }
+        }
+    }
+    &-radio {
+        span {
+            border-radius: 50%;
+            &::after {
+                border-radius: 50%;
+            }
+        }
+    }
+    &-fieldset {
+        border: 2px groove;
+        padding: 5px;
+        legend {
+            margin-left: 1em;
+        }
+    }
     ::-webkit-scrollbar {
         width: 14px;
     }
-    
     /* Track */
     ::-webkit-scrollbar-track {
         background-image: linear-gradient(45deg, #808080 25%, transparent 25%), linear-gradient(-45deg, #808080 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #808080 75%), linear-gradient(-45deg, transparent 75%, #808080 75%);
         background-size: 2px 2px;
     }
-    
     /* Handle */
     ::-webkit-scrollbar-thumb {
         background-color: #bfbfbf;
         box-shadow: 2px 2px #dfdfdf inset, -2px -2px #808080 inset;
     }
-    
     /* Handle on hover */
     ::-webkit-scrollbar-button {
         width: 14px;
@@ -272,5 +359,4 @@
         background-color: #bfbfbf;
         box-shadow: 2px 2px #dfdfdf inset, -2px -2px #808080 inset;
     }
-
 }

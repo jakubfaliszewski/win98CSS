@@ -126,8 +126,7 @@
         &lt;button class="win win-icon-button"&gt;◽&lt;/button&gt;
         &lt;button class="win win-icon-button"&gt;X&lt;/button&gt;
     &lt;/div&gt;
-&lt;/div&gt;
-                            </pre>
+&lt;/div&gt; </pre>
                     </div>
                 </div>
                 <!-- windows menu -->
@@ -206,27 +205,84 @@
                 <p>input</p>
                 <div class="grid">
                     <div class="grid-element">
-                        <input class="win win-input" type="text"/>
+                        <input class="win win-input" type="text" />
                     </div>
                     <div class="grid-element">
                         <pre class="prettyprint win-window-console">
 &#x3C;input class=&#x22;win win-input&#x22; type=&#x22;text&#x22;/&#x3E;</pre>
                     </div>
                 </div>
-                <!-- <hr>
-                <p>select</p>
+                <hr>
+                <p>select - must be in some kind of wrapper</p>
                 <div class="grid">
                     <div class="grid-element">
-                        <select class="win win-select" >
-                            <option>some option</option>
-                            <option>some option</option>
-                        </select>
+                        <div class="win win-select">
+                            <select>
+                                <option>some option 1</option>
+                                <option>some option 2</option>
+                                <option>some option 3</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="grid-element">
                         <pre class="prettyprint win-window-console">
-&#x3C;input class=&#x22;win win-input&#x22; type=&#x22;text&#x22;/&#x3E;</pre>
+&#x3C;div class=&#x22;win win-select&#x22;&#x3E;
+    &#x3C;select &#x3E;
+        &#x3C;option&#x3E;some option 1&#x3C;/option&#x3E;
+        &#x3C;option&#x3E;some option 2&#x3C;/option&#x3E;
+        &#x3C;option&#x3E;some option 3&#x3C;/option&#x3E;
+    &#x3C;/select&#x3E;
+&#x3C;/div&#x3E;                           </pre> </div>
+                </div>
+                <hr>
+                <p>radio/checkbox - input must be inside styled label</p>
+                <div class="grid">
+                    <div class="grid-element">
+                        <label class="win win-radio">windows radio
+                            <input type="radio" name="radio">
+                            <span></span>
+                        </label>
+                        <label class="win win-radio">windows radio
+                            <input type="radio" name="radio">
+                            <span></span>
+                        </label>
+                        <label class="win win-checkbox">windows checkbox
+                            <input type="checkbox" name="checkbox">
+                            <span></span>
+                        </label>
                     </div>
-                </div> -->
+                    <div class="grid-element">
+                        <pre class="prettyprint win-window-console">
+&#x3C;label class=&#x22;win win-radio&#x22;&#x3E;windows radio
+    &#x3C;input type=&#x22;radio&#x22; name=&#x22;radio&#x22;&#x3E;
+    &#x3C;span&#x3E;&#x3C;/span&#x3E;
+&#x3C;/label&#x3E;
+&#x3C;label class=&#x22;win win-checkbox&#x22;&#x3E;windows checkbox
+    &#x3C;input type=&#x22;checkbox&#x22; name=&#x22;checkbox&#x22;&#x3E;
+    &#x3C;span&#x3E;&#x3C;/span&#x3E;
+&#x3C;/label&#x3E;                            </pre> </div>
+                </div>
+            </div>
+            <hr>
+            <p>fieldset</p>
+            <div class="grid">
+                <div class="grid-element">
+                    <fieldset class="win win-fieldset">
+                        <legend>win98 fieldset</legend>
+                        <input class="win win-input" type="text" />
+                        <label class="win win-checkbox">windows checkbox
+                            <input type="checkbox" name="checkbox">
+                            <span></span>
+                        </label>
+                    </fieldset>
+                </div>
+                <div class="grid-element">
+                    <pre class="prettyprint win-window-console">
+&#x3C;fieldset class=&#x22;win win-fieldset&#x22;&#x3E;
+    &#x3C;legend&#x3E;win98 fieldset&#x3C;/legend&#x3E;
+   ...
+&#x3C;/fieldset&#x3E;                        </pre> </div>
+            </div>
             </div>
         </section>
     </section>
